@@ -60,8 +60,38 @@ header {
 
 
 /*---------------------
-----Import links-------
+---footer all styles---
 ---------------------*/
+
+footer {
+    background: #0a0826;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer {
+    color: white;
+    width: 262px;
+    height: 139px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.social_link {
+    width: 176px;
+    height: 32px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 25px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-evenly;
+}
 
 
 /*---------------------

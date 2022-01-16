@@ -2,11 +2,18 @@
 ----Import links-------
 ---------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Inter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Inter&family=Poppins&family=Roboto&display=swap');
 :root {
     --dongle: 'Dongle', sans-serif;
     --inter: 'Inter', sans-serif;
     --roboto: 'Roboto', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -15,10 +22,21 @@
 ---------------------*/
 
 .title {
-    font-family: var(--roboto);
+    font-family: var(--poppins);
     font-size: 24px;
     font-weight: 700;
     color: white;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--poppins);
+    padding: 10px 24px;
+    border-radius: 41px;
 }
 
 
@@ -30,6 +48,7 @@ header {
     height: 70px;
     width: 100%;
     background-color: rgb(80, 80, 235);
+    padding: 20px;
 }
 
 .header {
@@ -50,13 +69,147 @@ header {
 
 
 /*---------------------
-----Import links-------
+--article all style---
 ---------------------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.container_part {
+    /* padding: 0 20px; */
+    width: 570px;
+    margin: 30px;
+}
+
+.container_title {
+    font-family: var(--poppins);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.container_part img {
+    width: 440px;
+    height: 410px;
+    background-image: url(images/circle.svg);
+}
+
+.container p {
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
 
 /*---------------------
-----Import links-------
+----Product part styles----
 ---------------------*/
+
+.container-2 {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: var(--roboto);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-items: center;
+    gap: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: -5px 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-details {
+    width: 300px;
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.product-name h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.product-price h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.product-rating .fa-star.filled {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    color: #FB8200;
+}
+
+.product-rating .fa-star-half-alt.empty {
+    width: 15px;
+    height: 16px;
+    font-size: 12px;
+    color: #FB8200;
+}
+
+.product-rating span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-info p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+/* .button {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.button a {
+    padding: 10px;
+    color: #E02C6D;
+    text-align: end;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+} */
 
 
 /*---------------------
